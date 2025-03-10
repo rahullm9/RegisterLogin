@@ -6,4 +6,7 @@ const FormDataSchema = new mongoose.Schema({
     password: String
 })
 
-module.exports = FormDataSchema;
+
+
+const FormDataModel = mongoose.model("stu_reg", FormDataSchema);
+module.exports = FormDataModel
